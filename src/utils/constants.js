@@ -1,5 +1,5 @@
 export const people = [
-  { done: false, name: 'Daniel', role: '', imageUrl: null },
+  { done: false, name: 'Daniel', role: 'SRE Dude', imageUrl: null },
   { done: false, name: 'Ty', role: '', imageUrl: null },
   { done: false, name: 'Alyssa', role: '', imageUrl: null },
   { done: false, name: 'Jace', role: '', imageUrl: null },
