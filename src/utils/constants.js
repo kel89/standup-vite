@@ -5,6 +5,7 @@ export const people = [
   { done: false, name: 'Jace', role: '', imageUrl: null },
   { done: false, name: 'Ben', role: '', imageUrl: null },
   { done: false, name: 'Gui', role: '', imageUrl: null },
+  { done: false, name: 'Jesse', role: '', imageUrl: null },
   {
     done: false,
     name: 'Kenny',
