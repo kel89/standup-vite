@@ -5,6 +5,7 @@ import "./App.css";
 import Team from "./components/team";
 import Timer from "./components/timer";
 import { TOTAL_SECONDS } from "./utils/constants";
+import Status from "./components/status";
 
 const LEFT_START = "-400px";
 
@@ -44,6 +45,8 @@ function App() {
                 setLeft={setLeft}
             />
             <Team handleCheckboxClick={handleCheckboxClick} />
+            <hr className="w-3/4 mx-auto my-8 border-gray-300" />
+            <Status handleCheckboxClick={handleCheckboxClick} />
             <Confetti
                 style={{ display }}
                 width={windowSize[0]}
