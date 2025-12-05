@@ -17,7 +17,12 @@ export default function Status({ handleCheckboxClick }) {
             {sections.map((section) => (
                 <li
                     key={section.name}
-                    onClick={() => handleClick(section.name)}
+                    onClick={() => handleClick(section)}
+                    className={`${
+                        section.done
+                            ? "bg-gray-800 text-white"
+                            : "hover:bg-blue-50 text-gray-900"
+                    } rounded p-1.5 hover:cursor-pointer block my-1.5 pl-12 flex items-center text-2xl font-bold tracking-tight`}
                 >
                     {section.name}
                 </li>
