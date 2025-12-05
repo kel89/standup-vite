@@ -24,6 +24,7 @@ export const people = [
 
 export const status_sections = [
     { done: false, name: "Code Reviews" },
+    { done: false, name: "Prod/UI Reviews" },
     { done: false, name: "Blocked" },
 ];
 
