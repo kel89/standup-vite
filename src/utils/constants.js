@@ -14,12 +14,6 @@ export const people = [
     },
     { done: false, name: "Mike", role: "", imageUrl: null },
     { done: false, name: "Kyle", role: "", imageUrl: null },
-    {
-        done: false,
-        name: "Isaac",
-        role: "Codemaster",
-        imageUrl: "assets/kirby_computer.jpeg",
-    },
 ];
 
 export const status_sections = [
