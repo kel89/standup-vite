@@ -14,6 +14,7 @@ export const people = [
     { done: false, name: "Mike", role: "", imageUrl: null },
     { done: false, name: "Kyle", role: "", imageUrl: null },
     { done: false, name: "Dave", role: "", imageUrl: null },
+    { done: false, name: "Olive", role: "", imageUrl: null },
 ];
 
 export const status_sections = [
