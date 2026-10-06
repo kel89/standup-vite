@@ -45,7 +45,7 @@ function App() {
                 setLeft={setLeft}
             />
             <Team handleCheckboxClick={handleCheckboxClick} />
-            <hr className="w-3/4 mx-auto my-8 border-gray-300" />
+            <hr className="w-3/4 mx-auto my-8 border-gray-300 dark:border-gray-700" />
             <Status handleCheckboxClick={handleCheckboxClick} />
             <Confetti
                 style={{ display }}

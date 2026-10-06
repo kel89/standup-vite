@@ -42,7 +42,7 @@ export default function Timer({
     }, [going, secondsLeft, setSecondsLeft, setShowReaper]);
     return (
         <div className="relative">
-            <div className="bg-white px-6 sm:px-12 fixed top-0 w-full border-bottom shadow-xl left-0 right-0">
+            <div className="bg-white dark:bg-gray-900 px-6 sm:px-12 fixed top-0 w-full border-bottom shadow-xl left-0 right-0">
                 <div className="flex apart">
                     <h1 className="text-2xl font-bold">
                         stand<u>up</u>

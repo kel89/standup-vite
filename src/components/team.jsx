@@ -22,13 +22,13 @@ export default function Team({handleCheckboxClick}) {
       style={{marginTop: '320px'}}
       className="mx-auto max-w-xs gap-x-8 gap-y-16 text-center grid-cols-1"
     >
-      {allDone && <h1 className="text-black text-2xl font-bold">All done! Check Code Reviews</h1>}
+      {allDone && <h1 className="text-black dark:text-white text-2xl font-bold">All done! Check Code Reviews</h1>}
       {members.map((person) => (
         <li
           key={person.name}
           onClick={() => handleClick(person)}
           className={`${
-            person.done ? 'bg-gray-800' : 'hover:bg-blue-50'
+            person.done ? 'bg-gray-800 dark:bg-gray-700' : 'hover:bg-blue-50 dark:hover:bg-gray-800'
           } rounded p-1.5 hover:cursor-pointer block my-1.5 flex items-center`}
         >
           <div className="w-12">
@@ -36,12 +36,12 @@ export default function Team({handleCheckboxClick}) {
           </div>
           <span
             className={`mr-3 text-2xl font-bold tracking-tight rext-ri ${
-              person.done ? 'text-white' : 'text-gray-900'
+              person.done ? 'text-white' : 'text-gray-900 dark:text-gray-100'
             }`}
           >
             {person.name}
           </span>
-          <span className={`inline-block ml-auto pr-3 text-xs uppercase text-gray-900 text-right ${person.done ? 'text-white' : 'text-gray-900'}`}>{person.role}</span>
+          <span className={`inline-block ml-auto pr-3 text-xs uppercase text-right ${person.done ? 'text-white' : 'text-gray-900 dark:text-gray-100'}`}>{person.role}</span>
         </li>
       ))}
     </ul>
