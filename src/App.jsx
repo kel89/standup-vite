@@ -6,6 +6,7 @@ import Team from "./components/team";
 import Timer from "./components/timer";
 import { TOTAL_SECONDS } from "./utils/constants";
 import Status from "./components/status";
+import ThemeToggle from "./components/ThemeToggle";
 
 const LEFT_START = "-400px";
 
@@ -32,9 +33,12 @@ function App() {
 
     return (
         <div
-            className="container mx-auto pb-24"
+            className="container mx-auto pb-24 relative"
             style={{ overflowX: "hidden" }}
         >
+            <div className="absolute top-4 right-4 z-50">
+                <ThemeToggle />
+            </div>
             <Timer
                 secondsLeft={secondsLeft}
                 setSecondsLeft={setSecondsLeft}
